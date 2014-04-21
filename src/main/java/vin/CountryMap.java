@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class CountryMap extends HashMap<String, String> {
 
-  public static String CountryCode[] = {
+  private static final String CountryCode[] = {
       "AA-AH", "South Africa",
       "AJ-AN", "Ivory Coast",
       "AP-A0", "not assigned",

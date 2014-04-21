@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class ManufacturerMap extends HashMap<String, String> {
 
-  public static String ManufacturerCodes[] = {
+  private static final String ManufacturerCodes[] = {
       "AL", "British Leyland Rover Group",
       "AU", "Motor Coach Industries Classic",
       "BA", "Blue Bird bus",
@@ -71,7 +71,6 @@ public class ManufacturerMap extends HashMap<String, String> {
 
   public static ManufacturerMap getDefault() {
     ManufacturerMap defaultMap = new ManufacturerMap();
-    //initialize manufacturer codes map
     int len = ManufacturerCodes.length;
     for (int i = 0; i < len; i++) {
       String code = ManufacturerCodes[i++];
